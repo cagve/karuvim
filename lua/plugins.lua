@@ -2,6 +2,7 @@
 return require('packer').startup(function()
 		use 'wbthomason/packer.nvim'
 		use 'nvim-lua/popup.nvim'
+		use 'junegunn/goyo.vim'
 		use 'nvim-lua/plenary.nvim'
 		use 'ThePrimeagen/harpoon'
 		use 'nvim-telescope/telescope.nvim'
