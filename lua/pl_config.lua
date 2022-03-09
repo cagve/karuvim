@@ -90,3 +90,5 @@ require'nvim-treesitter.configs'.setup {
 	}
 }
 
+-- MENU PLUGIN
+require'nvim-tree'.setup{} 

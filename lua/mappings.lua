@@ -37,4 +37,5 @@ keymap('n', ']d', "<cmd>lua vim.diagnostic.goto_next()<cr>", {})
 keymap('n', '<leader>q', "<cmd>lua vim.diagnostic.setloclist()<cr>", {})
 keymap('n', '<leader>f', "<cmd>lua vim.lsp.buf.formatting()<cr>", {})
 
-
+-- Menu
+keymap('n', '<C-n>', ":NvimTreeToggle<CR>", {})
