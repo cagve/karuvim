@@ -17,6 +17,7 @@ require('cmp').setup{
 	},
 	sources = cmp.config.sources({
 		{ name = 'nvim_lsp' },
+		{ name = 'ultisnips' },
 		{ name = 'buffer' },
 		{ name = 'path'},
 		{ name = 'nvim_lua'},
@@ -28,7 +29,8 @@ cmp.event:on( 'confirm_done', cmp_autopairs.on_confirm_done({  map_char = { tex 
 cmp_autopairs.lisp[#cmp_autopairs.lisp+1] = "racket"
 
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
-require'lspconfig'.rust_analyzer.setup{}
+require'lspconfig'.rust_analyzer.setup{capabilities = capabilities}
+require'lspconfig'.texlab.setup{capabilities = capabilities}
 
 -- AUTOPAIRS PLUGINS
 require('nvim-autopairs').setup{}
