@@ -17,6 +17,7 @@ return require('packer').startup(function()
 		use 'neovim/nvim-lspconfig'                                
 		use 'nvim-lua/plenary.nvim'
 		use 'nvim-lua/popup.nvim'
+		use 'nvim-lualine/lualine.nvim'
 		use 'nvim-telescope/telescope.nvim'
 		use 'nvim-treesitter/nvim-treesitter'
 		use 'nvim-treesitter/playground'
