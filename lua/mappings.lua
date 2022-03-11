@@ -39,3 +39,7 @@ keymap('n', '<leader>f', "<cmd>lua vim.lsp.buf.formatting()<cr>", {})
 
 -- Menu
 keymap('n', '<C-n>', ":NvimTreeToggle<CR>", {})
+
+-- Git
+keymap('n', '<leader>gg', ":Git<CR>", {})
+keymap('n', '<leader>gc', ":Git commit<CR>", {})
